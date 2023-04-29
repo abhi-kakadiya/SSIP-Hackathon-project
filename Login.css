@@ -1,0 +1,197 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-container
+{
+    background-image: url('./Images/Images/commonBg.jpg');
+    width: 65rem;
+}
+.wcd
+{
+    width: 33rem;
+}
+.form-container div
+{
+    margin: auto;
+    text-align: center;
+}
+.login-container
+{
+    display: flex;
+}
+.poster-container
+{
+    width: 35%;
+}
+.poster-container img
+{
+    width: 100%;
+    height: 100vh;
+}
+.form-container div form .input-cont input
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: start;
+    font-size: 1rem;
+    padding-left: 3px;
+}
+.form-container div form .input-cont
+{
+    background-color: white;
+    border: 1px solid black;
+    width: 19rem;
+    padding: 1rem;
+    border-radius: 12rem;
+    margin-top: 1.2rem;
+    text-align: start;
+}
+.forgot-pass
+{
+    text-decoration: none;
+    color: blue;
+    margin-left: 12rem;
+    cursor: pointer;
+}
+.login-btn
+{
+    width: 21rem;
+    padding: 1rem;
+    border-radius: 12rem;
+    font-size: 1rem;
+    background-image: linear-gradient(45deg,dodgerblue,black);
+    color: white;
+    border: 1px solid white;
+}
+.admin-or-officer
+{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    width: 16rem;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    /* box-shadow: 0px 0px 10px gray; */
+    border-radius: 1.2rem;
+}
+.admin-or-officer .common-option
+{
+    width: 8rem;
+    padding: 0;
+    margin: 0;
+    padding: 0.7rem;
+    text-decoration: none;
+    color: black;
+}
+.admin-or-officer .active-option
+{
+    background-color: aqua;
+    background-image: linear-gradient(45deg,dodgerblue,black);
+    color: white;
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 10px gray;
+    /* border-top-left-radius: 1.2rem; */
+    /* border: 1px solid black; */
+    /* border-bottom-left-radius: 1.2rem; */
+}
+.buttons-emer-sugg-cont
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem !important;
+}
+.buttons-emer-sugg-cont .emer
+{
+    width: 21rem;
+    padding: 1rem 0.6rem;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+.buttons-emer-sugg-cont .leave
+{
+    width: 21rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-image: linear-gradient(45deg,dodgerblue,black);
+    color: white;
+    border: 1px solid white;
+}
+@media screen and (max-width : 768px)
+{
+    .form-container
+    {
+        width: 35rem;
+    }    
+    .wcd
+    {
+        width: 20rem;
+    }
+    .poster-container
+    {
+        width: auto;
+    }
+    .form-container div
+    {
+        padding: 1.3rem;
+    }
+}
+@media screen and (max-width : 550px)
+{
+    .poster-container
+    {
+        display: none;
+    }
+    .form-container
+    {
+        height: 100vh;
+        width: 100%;
+    }
+    .form-container div form .input-cont
+    {
+        width: 15rem;
+    }
+    .login-btn
+    {
+        width: 18rem;
+    }
+    .wcd
+    {
+        width: 15rem;
+    }
+}
+@media screen and (max-width : 400px)
+{
+    .admin-or-officer
+    {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .form-container div form .input-cont
+    {
+        width: 90%;
+        padding: 0.8rem;
+    }
+    .form-container div
+    {
+        margin: 0;
+    }
+    .login-btn
+    {
+        width: 100%;
+    }
+    .forgot-pass
+    {
+        margin-left: 0;
+    }
+}

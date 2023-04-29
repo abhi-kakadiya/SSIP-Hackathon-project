@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gujrat - Analytics</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/Analytics.css" />
+  <link rel="shortcut icon" href="./Images/Images/fav.png" type="image/x-icon">
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Slick Carousel Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Side Navigation Bar Starts -->
+  <nav>
+    <div class="logo">
+      <i class="bx bx-menu menu-icon"></i>
+      <span class="logo-name">Analytics</span>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">SSIP</span>
+      </div>
+
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list">
+            <a href="./Analytics.html" class="nav-link">
+              <i class="bx bx-pie-chart-alt-2 icon"></i>
+              <span class="link">Analytics</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./Crime Records/Index.html" class="nav-link">
+              <ion-icon name="book-outline" class="icon"></ion-icon>
+              <span class="link">Crime Records</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./Trends/Trends.html" class="nav-link">
+              <ion-icon name="analytics-outline" class="icon"></ion-icon>
+              <span class="link">Trends</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./Suggestion/Suggestions.html" class="nav-link">
+              <i class="bx bx-message-rounded icon"></i>
+              <span class="link">Suggestions</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./Mapping/gujrat_all_2017.html" class="nav-link nav-link-active">
+              <ion-icon name="map-outline" class="icon icon-active" ></ion-icon>
+              <span class="link icon-active">Mapping</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="bottom-cotent">
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SideNavbar part ends -->
+
+  <section class="overlay"></section>
+  <!-- Analytics Container Starts -->
+  <div class="Analytics-container" id="Analytics-container">
+    <div class="analytics-flex-container">
+      <!-- Map Container -->
+      <div class="map-container">
+        <img src="./Images/GujMap.png" title="Click here to view district wise analysis" id="gujmap" alt=""
+          data-aos="fade-in" data-aos-delay="200">
+      </div>
+
+      <div class="all-analytics-container">
+        <div class="state-and-total-cases">
+          <div>
+            <h1 class="State-title" data-aos="fade-in" data-aos-delay="500">Gujarat</h1>
+            <p class="last-updated" data-aos="fade-in" data-aos-delay="900">Last Updated on 6 Oct 2022, 22:36 PM IST</p>
+          </div>
+          <div class="Total-case-container">
+            <p class="total-case-title" data-aos="fade-in" data-aos-delay="1300">Total Cases</p>
+            <p data-aos="fade-in" data-aos-delay="1700">3,09,454,234</p>
+          </div>
+        </div>
+        <!-- Slider Starts Here -->
+        <div class="gal-slider">
+          <div class="case-card first" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="700">
+            <p class="case-type">Murder</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card second" data-aos="zoom-in" data-aos-delay="450" data-aos-duration="700">
+            <p class="case-type">Rape</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card third" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="700">
+            <p class="case-type">Acid Attack</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card fourth" data-aos="zoom-in" data-aos-delay="750" data-aos-duration="700">
+            <p class="case-type">Domestic Violence</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card fifth">
+            <p class="case-type">Dowry Deaths</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card sixth">
+            <p class="case-type">Kidnapping & Abduction of women</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card seventh">
+            <p class="case-type">Immoral Trafficking</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card eighth">
+            <p class="case-type">Assault on women with intent to outrage her modesty</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card ninth">
+            <p class="case-type">Abetment to sucide of women</p>
+            <p>8,45,345</p>
+          </div>
+          <div class="case-card tenth">
+            <p class="case-type">Cyber Crime</p>
+            <p>8,45,345</p>
+          </div>
+        </div>
+        <!-- Slider Ends Here -->
+      </div>
+    </div>
+    <!-- Doghnut and Top districts -->
+    <div class="analytics-flex-container">
+      <!-- Doghnut Main container -->
+      <div class="doughnut-main-cont">
+        <p class="Chart-title-A">Crime Type vs Crime Numbers for All Years</p>
+        <div class="doughnut-chart-cont">
+          <canvas id="myChart" class="doughnut-chart"></canvas>
+        </div>
+      </div>
+      <!-- Top Districts Container -->
+      <div class="Top-districts-container">
+        <p class="top-title">Top districts</p>
+        <div class="district-data-and-graph">
+          <div class="district-data">
+            <p><span class="case-count">2,47,724</span><span class="city-name">Ahmedabad</span></p>
+            <p><span class="case-count">1,33,724</span><span class="city-name">Surat</span></p>
+            <p><span class="case-count">47,354</span><span class="city-name">Rajkot</span></p>
+            <p><span class="case-count">27,724</span><span class="city-name">Botad</span></p>
+            <p><span class="case-count">8,724</span><span class="city-name">Jamnagar</span></p>
+          </div>
+          <!-- Bar Chart Container -->
+          <div class="bar-chart-cont">
+            <p class="Chart-title-A">Top District vs Total Crime Numbers</p>
+            <canvas id="barChart" class="line-chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Line Chart Main Container -->
+    <div class="analytics-flex-container margin-top">
+      <div class="Hori-bar-chart-main-cont" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
+        data-offset="100">
+        <p class="Chart-title-A">Crime Type vs Crime Numbers for Current Year</p>
+        <div class="horizon-bar-chart">
+          <canvas id="horizonBarChart" class="horizon-chart"></canvas>
+        </div>
+      </div>
+      <div class="line-chart-main-cont" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700"
+        data-offset="100">
+        <p class="Chart-title-A">Top District vs Total Crime Numbers</p>
+        <div class="line-chart-cont">
+          <canvas id="lineChart" class="line-chart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Analytics Container ends -->
+
+  <!-- Footer Starts -->
+  <footer id="footer">
+    <div class="row">
+      <div class="col">
+        <div class="logos-cont">
+          <img src="./Images/Images/fav.png" class="logo" alt="logo">
+          <img src="./Images/Images/azadi-final.png" class="logo" alt="logo">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci similique id nam omnis error odit
+          iste nesciunt.</p>
+      </div>
+      <div class="col">
+        <h3>Office</h3>
+        <p>Sardar Bhavan</p>
+        <p>Block 9 ,6th floor, Sector-10 </p>
+        <p>Gandhinagar, Gujarat, 382010</p>
+        <p class="email-id"><a href="mailto:pa2sec-wncw@gujarat.gov.in" >pa2sec-wncw@gujarat.gov.in</a></p>
+        <h4>079 2325 7942</h4>
+      </div>
+      <div class="col">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="./Analytics.html"><i class="bx bx-pie-chart-alt-2 icon footer-icon"></i>&nbsp;&nbsp;Analytics</a>
+          </li>
+          <li><a href="./Crime Records/Index.html">
+              <ion-icon name="book-outline" class="icon"></ion-icon>&nbsp;&nbsp;Crime Records
+            </a></li>
+          <li><a href="./Trends/Trends.html">
+              <ion-icon name="analytics-outline" class="icon"></ion-icon>&nbsp;&nbsp;Trends
+            </a></li>
+          <li><a href="./Suggestion/Suggestions.html"><i class="bx bx-message-rounded icon"></i>&nbsp;&nbsp;Suggestions</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Scan QR</h3>
+        <img src="./Images/Images/yellowQR-removebg-preview.png" class="login-qr" alt="">
+        <!-- <div class="social-media-icons">
+          <ion-icon name="logo-facebook" class="sMedia"></ion-icon>
+          <ion-icon name="logo-whatsapp" class="sMedia"></ion-icon>
+          <ion-icon name="logo-instagram" class="sMedia"></ion-icon>
+          <ion-icon name="logo-twitter" class="sMedia"></ion-icon>
+        </div> -->
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Harshilsinh Rajput &#169; 2022 - All Rights Reserved</p>
+  </footer>
+  <!-- Footer Ends -->
+
+  <!-- District Popup Starts -->
+  <div class="display-none" id="dist-popup">
+    <div class="district-links-container">
+      <a href="./Districts/Ahmedabad.html" class="district-link">Ahmedabad</a>
+      <a href="./Districts/Amreli.html" class="district-link">Amreli</a>
+      <a href="./Districts/Anand.html" class="district-link">Anand</a>
+      <a href="./Districts/Aravalli.html" class="district-link">Aravalli</a>
+      <a href="./Districts/banaskantha.html" class="district-link">Banaskantha</a>
+      <a href="./Districts/bharuch.html" class="district-link">Bharuch</a>
+      <a href="./Districts/bhavanagar.html" class="district-link">Bhavnagar</a>
+      <a href="./Districts/botad.html" class="district-link">Botad</a>
+      <a href="./Districts/chhotaudaipur.html" class="district-link">Chhota Udepur</a>
+      <a href="./Districts/dahod.html" class="district-link">Dahod</a>
+      <a href="./Districts/dang.html" class="district-link">Dang</a>
+      <a href="./Districts/Dwarka.html" class="district-link">DevBhoomi Dwarka</a>
+      <a href="./Districts/gandhiangar.html" class="district-link">Gandhinagar</a>
+      <a href="./Districts/girsomnath.html" class="district-link">Gir Somnath</a>
+      <a href="./Districts/jamnagar.html" class="district-link">Jamnagar</a>
+      <a href="./Districts/junagadh.html" class="district-link">Junagadh</a>
+      <a href="./Districts/kutch.html" class="district-link">Kutch</a>
+      <a href="./Districts/kheda.html" class="district-link">Kheda</a>
+      <a href="./Districts/Mahisagar.html" class="district-link">Mahisagar</a>
+      <a href="./Districts/mehsana.html" class="district-link">Mehsana</a>
+      <a href="./Districts/morbi.html" class="district-link">Morbi</a>
+      <a href="./Districts/narmada.html" class="district-link">Narmada</a>
+      <a href="./Districts/navsari.html" class="district-link">Navsari</a>
+      <a href="./Districts/panchmahal.html" class="district-link">Panchmahal</a>
+      <a href="./Districts/patan.html" class="district-link">Patan</a>
+      <a href="./Districts/probandar.html" class="district-link">Porbandar</a>
+      <a href="./Districts/rajkot.html" class="district-link">Rajkot</a>
+      <a href="./Districts/sabarkantha.html" class="district-link">Sabarkantha</a>
+      <a href="./Districts/surat.html" class="district-link">Surat</a>
+      <a href="./Districts/surendranagar.html" class="district-link">Surendranagar</a>
+      <a href="./Districts/tapi.html" class="district-link">Tapi</a>
+      <a href="./Districts/Vadodara.html" class="district-link">Vadodara</a>
+      <a href="./Districts/valsad.html" class="district-link">Valsad</a>
+      <h1 id="close" class="close-popup">
+        <ion-icon name="close-outline"></ion-icon>
+      </h1>
+    </div>
+  </div>
+  <!-- District Popup Ends -->
+</body>
+
+<!-- Ion Icons Scripts Starts -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- Ion Icons Scripts ends -->
+
+<!-- Jquery , Slick & Chart JS -->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@1"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Sidebar scripts & Slick Slider Script -->
+<script>
+  const navBar = document.querySelector("nav"),
+    menuBtns = document.querySelectorAll(".menu-icon"),
+    overlay = document.querySelector(".overlay");
+
+  const map = document.getElementById("gujmap");
+  const popup = document.getElementById("dist-popup");
+  const closeBtn = document.getElementById("close");
+  const anaCont = document.getElementById("Analytics-container");
+  const footer = document.getElementById("footer");
+
+  map.addEventListener("click", () => {
+    popup.classList.remove("display-none");
+    popup.classList.add("district-popup");
+    anaCont.classList.add("blur");
+    footer.classList.add("blur")
+  })
+
+  closeBtn.addEventListener("click", () => {
+    popup.classList.add("display-none");
+    anaCont.classList.remove("blur");
+    footer.classList.remove("blur")
+  })
+
+  menuBtns.forEach((menuBtn) => {
+    menuBtn.addEventListener("click", () => {
+      navBar.classList.toggle("open");
+    });
+  });
+
+  overlay.addEventListener("click", () => {
+    navBar.classList.remove("open");
+  });
+  $('.gal-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    pauseOnHover: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+</script>
+
+<!-- Chart JS Script starts -->
+
+<script>
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const ctxLine = document.getElementById('lineChart').getContext('2d');
+  const ctxBar = document.getElementById('barChart').getContext('2d');
+  const ctxHorizonBar = document.getElementById('horizonBarChart').getContext('2d');
+
+  const scales = {
+    x: {
+      grid: {
+        display: false
+      }
+    },
+    y: {
+      beginAtZero: true,
+      grid: {
+        display: false
+      }
+    }
+  }
+
+  // Doughnut Chart Data
+  const myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Murder', 'Rape', 'Acid Attack', 'Domestic Violence', 'Dowry Deaths', 'Kidnapping & Abduction of women', 'Immoral Trafficking', 'Assault on women with intent to outrage her modesty', 'Abetment to sucide of women', 'Cyber Crime'],
+      datasets: [{
+        label: 'Votes',
+        data: [12, 2, 18, 5, 9, 32, 20, 11, 5, 12],
+        backgroundColor: [
+          '#38E54D',
+          '#47B5FF',
+          '#ff4a4a',
+          '#e9dac1',
+          '#109618',
+          '#990099',
+          '#8479e1',
+          '#ffadf0',
+          '#7D5A5A',
+          '#D57149'
+        ],
+        borderColor: [
+          '#38E54D',
+          '#47B5FF',
+          '#ff4a4a',
+          '#e9dac1',
+          '#109618',
+          '#990099',
+          '#8479e1',
+          '#ffadf0',
+          '#7D5A5A',
+          '#D57149'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      maintainAspectRatio: false,
+      scales: scales,
+      plugins: {
+        title: {
+          display: false,
+        },
+        subtitle: {
+          display: false,
+          text: 'Crime Type vs Number of Cases'
+        },
+        legend: {
+          display: true,
+          position: 'right',
+          align: 'center'
+        }
+      }
+    }
+  });
+
+  // Line Chart Data
+  const myChart2 = new Chart(ctxLine, {
+    type: 'line',
+    data: {
+      labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
+      datasets: [
+        {
+          label: 'Total Crimes',
+          data: [1000, 1500, 1234, 3212, 8756, 3400],
+          fill: false,
+          borderColor: 'rgba(255, 99, 132, 1)',
+          tension: 0.3
+        }
+      ]
+    },
+    options: {
+      scales: scales,
+      plugins: {
+        deferred: {
+          xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+          yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+          delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+        },
+        legend: {
+          display: false,
+        }
+      }
+    }
+  });
+
+  // Bar Chart Data
+  const myChart3 = new Chart(ctxBar, {
+    type: 'bar',
+    data: {
+      labels: ['Ahmedabad', 'Surat', 'Rajkot', 'Gandhinagar', 'Amreli'],
+      datasets: [{
+        label: 'Total Crimes',
+        data: [120432, 87435, 65487, 55321, 45679],
+        backgroundColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: scales,
+      plugins: {
+        legend: {
+          display: false,
+        }
+      }
+    }
+  });
+  //Horizon Bar Chart Data
+  const myChart4 = new Chart(ctxHorizonBar, {
+    type: 'bar',
+    data: {
+      labels: ['Murder', 'Rape', 'Acid Attack', 'Domestic Violence', 'Dowry Deaths', 'Kidnapping', 'Immoral Trafficking', 'Assault on women', 'sucide', 'Cyber Crime'],
+      datasets: [{
+        axis: 'y',
+        label: 'Total Crimes',
+        data: [34, 21, 55, 65, 21, 11, 3, 8, 12, 29],
+        backgroundColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          '#C98474',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          '#B6E388',
+          '#D0B8A8',
+          '#7D5A5A',
+          '#D57149'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          '#C98474',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          '#B6E388',
+          '#D0B8A8',
+          '#7D5A5A',
+          '#D57149'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        x: {
+          // grid: {
+          //   display: false
+          // }
+        },
+        y: {
+          beginAtZero: true,
+          grid: {
+            display: false
+          }
+        }
+      },
+      indexAxis: 'y',
+      plugins: {
+        legend: {
+          display: false,
+        }
+      }
+    }
+  });
+</script>
+<!-- Chart JS Script ends -->
+<!-- Aos  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 100,
+    duration: 1100,
+  });
+</script>
+
+</html>

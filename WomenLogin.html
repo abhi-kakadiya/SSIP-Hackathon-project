@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"
+        integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css"
+        integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+        integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Women Login</title>
+    <link rel="stylesheet" href="./css/Women.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="form-container">
+            <div class="form-common">
+                <img src="./Images/Images/WCD.png" class="wcd" alt="">
+                <section class="admin-or-officer">
+                    <a href="./OfficerLogin.html" class="common-option active-option">Officer</a>
+                    <a href="./AdminLogin.html" class="common-option ">Admin</a>
+                </section>
+                <form action="./o_authentication.php" method="POST">
+                    <div class="input-cont">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-cont">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div><br>
+                    <a href="./forgot.html" class="forgot-pass">Forgot Password?</a><br><br>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <button id="emergency" class="emergency">Emergency</button>
+                <p id="dekhad"></p>
+            </div>
+        </div>
+        <div class="poster-container">
+            <img src="./Images/Images/Poster.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    const emr_btn = document.getElementById("emergency");
+    let ayo = "ayoooooooooooo";
+    let finalLocation = '';
+    emr_btn.addEventListener("click", () => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(onSuccess, onError)
+        }
+        else {
+            emr_btn.innerText = "Your Browser Not Support"
+        }
+    })
+    function onSuccess(position) {
+        let { latitude, longitude } = position.coords;
+        console.log(latitude, longitude)
+        fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=76233c2b484447e88ccd127b98f8f0e2`)
+            .then(response => response.json()).then(result => {
+                let allDetails = result.results[0].components;
+                console.log(result)
+                console.log(allDetails)
+                let { city, country, county, road, road_type, state, state_district, latitude, longitude } = allDetails;
+
+                finalLocation = "Latitude :" + position.coords.latitude + ", Longitude is :" + position.coords.longitude + ", Road is :" + road + ', Road Type is : ' + road_type + ', City is :' + city + ', Taluka is : ' + county + ', District is : ' + state_district + ', State is :' + state + ', Country is :' + country + '.';
+                console.log(finalLocation)
+            })
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "ssiphack@gmail.com",
+            Password: "7ADDD0ADE6B1B2F2E14C039282155AFAFC69",
+            To: 'rajputharshil982002@gmail.com',
+            From: "ssiphack@gmail.com",
+            Subject: "This is the subject",
+            Body: "And this is the body"
+        }).then(
+            message => alert(message)
+        );
+    }
+    finalLocation ? document.getElementById("dekhad").innerText = "Dekhayu" : null 
+    function onError(err) {
+        console.log(err)
+    }
+</script>
+
+</html>
